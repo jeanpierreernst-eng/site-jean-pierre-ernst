@@ -1,15 +1,10 @@
-FICHIERS PAGE « POUR LES PROFESSIONNELS »
+PAGE « MES ÉCRITS »
 
-Téléversez à la racine du dépôt GitHub :
-- professionnels.html
+Téléversez sur GitHub :
+- ecrits.html
 - styles.css
-- pro-hero.png
-- pro-supervision.png
-- pro-formations.png
-- pro-evaluation.png
 
-Le fichier maquette-reference.png est seulement la maquette validée : inutile de le téléverser.
+Les deux couvertures utilisent les fichiers déjà présents sur votre dépôt :
+slide6_image4.jpg et slide6_image5.jpg
 
-IMPORTANT : styles.css contient ici les styles de la page Professionnels.
-Si votre styles.css actuel contient aussi les styles spécifiques des autres pages, ne le remplacez pas aveuglément :
-il faut fusionner ces règles avec votre feuille actuelle. Le fichier professionnels.html, lui, peut remplacer directement l'actuel.
+Les 8 liens d’articles et les 2 liens vers les ouvrages ont été conservés.
