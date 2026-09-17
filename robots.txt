@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jeanpierreernst-eng.github.io/site-jean-pierre-ernst/sitemap.xml
