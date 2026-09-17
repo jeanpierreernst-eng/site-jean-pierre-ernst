@@ -180,3 +180,95 @@ footer{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;padding:30px 
  .page-about .portrait-card{position:static}
  .page-about .portrait-card img{min-height:300px;max-height:440px}
 }
+
+
+/* ===== V8 : CONSULTATIONS uniquement ===== */
+.page-consultations{background:#f6f2ea}
+.page-consultations main{
+  background:
+    radial-gradient(circle at 90% 8%,rgba(198,177,132,.18),transparent 27%),
+    linear-gradient(180deg,#f8f4ed 0%,#f1ece3 100%);
+}
+.page-consultations .page-wrap{
+  width:min(1180px,calc(100% - 48px));
+  margin:0 auto;
+  padding:56px 0 72px;
+}
+.page-consultations .eyebrow{
+  color:#55756f;letter-spacing:.16em;font-size:.78rem;font-weight:800;
+}
+.page-consultations h1{
+  margin:.12em 0 .18em;
+  font-size:clamp(3.4rem,5.5vw,5.5rem);
+  line-height:1;
+  color:#213638;
+}
+.page-consultations .consult-lead{
+  max-width:650px;
+  margin:0 0 34px;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(1.35rem,2vw,1.75rem);
+  line-height:1.4;
+  color:#48675f;
+}
+.page-consultations .cards.two{
+  gap:24px;
+}
+.page-consultations .cards.two .card{
+  background:rgba(255,255,255,.86);
+  border:1px solid rgba(74,103,96,.16);
+  border-radius:22px;
+  padding:30px 32px;
+  box-shadow:0 14px 34px rgba(39,54,52,.08);
+}
+.page-consultations .cards.two .card h2,
+.page-consultations .cards.two .card h3{
+  font-family:Georgia,"Times New Roman",serif;
+  color:#315c55;
+  font-size:1.65rem;
+}
+.page-consultations .cards.two .card a{
+  display:inline-block;
+  margin-top:10px;
+  padding:12px 18px;
+  border-radius:10px;
+  background:#174d42;
+  color:white;
+  text-decoration:none;
+  font-weight:700;
+}
+.page-consultations h2{
+  color:#213638;
+}
+.page-consultations .cards.three{
+  gap:22px;
+}
+.page-consultations .cards.three .card{
+  min-height:185px;
+  padding:28px 26px;
+  border-radius:20px;
+  background:linear-gradient(145deg,rgba(255,255,255,.9),rgba(239,235,225,.9));
+  border:1px solid rgba(74,103,96,.14);
+  box-shadow:0 12px 28px rgba(39,54,52,.07);
+}
+.page-consultations .cards.three .card h3{
+  margin-top:0;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:1.45rem;
+  color:#315c55;
+}
+.page-consultations .consult-quote{
+  margin-top:34px;
+  padding:26px 30px;
+  border-radius:20px;
+  background:rgba(222,231,220,.72);
+  color:#29453f;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:1.3rem;
+  font-style:italic;
+  line-height:1.5;
+}
+@media(max-width:820px){
+  .page-consultations .page-wrap{width:min(100% - 30px,680px);padding:42px 0 56px}
+  .page-consultations .cards.two,.page-consultations .cards.three{grid-template-columns:1fr}
+}
