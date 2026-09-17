@@ -1,14 +1,77 @@
-<!doctype html><html lang="fr"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Infos pratiques — Jean-Pierre Ernst</title><link rel="stylesheet" href="styles.css"></head><body>
-<header class="topbar"><a class="brand" href="index.html">Jean-Pierre Ernst</a>
-<button class="menu" aria-label="Ouvrir le menu" aria-expanded="false">☰</button><nav><a href="index.html">Accueil</a><a href="qui-suis-je.html">Qui suis-je ?</a><a href="consultations.html">Consultations</a><a href="professionnels.html">Pour les professionnels</a><a href="ecrits.html">Mes écrits</a><a href="infos-pratiques.html" class="active">Infos pratiques</a></nav></header>
-<main><section class="section"><p class="kicker">Tarifs et renseignements</p><h1 class="page-title">Infos pratiques</h1><div class="cards"><article><h3>Tarifs en présentiel</h3><p><strong>Consultation individuelle :</strong> 60 €</p><p><strong>Consultation familiale :</strong> 75 €</p><p><strong>Séance EMDR :</strong> 75 €</p>
-<hr style="border:0;border-top:1px solid var(--line);margin:22px 0 18px">
-<p><strong>Lieu des consultations</strong><br>
-Maison pluridisciplinaire de Santé<br>
-6 rue des Vignes<br>
-71570 Romanèche-Thorins</p></article><article><h3>Bon à savoir</h3><p>Les consultations ne sont pas remboursées par la sécurité sociale, mais de nombreuses mutuelles les remboursent.</p><p>Je ne suis pas affilié au dispositif « mon soutien psy ».</p></article></div></section></main>
-<footer><strong>Jean-Pierre Ernst</strong><span>Psychologue clinicien · Thérapeute de famille</span><a href="tel:+33662681956">06 62 68 19 56</a></footer>
-<script>const b=document.querySelector('.menu'),n=document.querySelector('nav');b.addEventListener('click',()=>{const o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});</script>
-</body></html>
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Infos pratiques — Jean-Pierre Ernst</title>
+<meta name="description" content="Tarifs, lieu de consultation et informations pratiques — Jean-Pierre Ernst, psychologue clinicien et thérapeute de famille.">
+<style>
+:root{--ink:#123735;--text:#142d2d;--green:#183f39;--soft:#eef4ef;--cream:#fbfaf6;--line:#d9e1dc}
+*{box-sizing:border-box} body{margin:0;color:var(--text);background:#fff;font-family:Arial,Helvetica,sans-serif}
+a{color:inherit}.top{height:74px;display:flex;align-items:center;justify-content:space-between;padding:0 max(7vw,24px);border-bottom:1px solid #e6ebe8;background:#fff}
+.brand{font-family:Georgia,serif;font-size:20px;font-weight:700}.brand small{display:block;font:14px Arial,sans-serif;font-weight:400;margin-top:3px}
+nav{display:flex;gap:27px;align-items:center;font-size:14px}nav a{text-decoration:none;white-space:nowrap}nav .active{font-weight:700;border-bottom:2px solid var(--green);padding-bottom:12px}
+.hero{min-height:235px;background:linear-gradient(90deg,rgba(14,48,40,.72),rgba(14,48,40,.18)),url("assets/consultations-hero.jpg") center/cover;display:flex;align-items:center}
+.hero-inner{width:min(1320px,86%);margin:auto;color:white}.kicker{text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:700}
+h1{font:700 clamp(48px,5vw,72px)/.98 Georgia,serif;margin:12px 0}.hero p{font:italic 22px/1.35 Georgia,serif;max-width:600px;margin:0}
+.wrap{width:min(1320px,86%);margin:18px auto 16px}.grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:18px}
+.card,.photo{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--cream)}
+.card{padding:27px 30px}.card h2{font:700 27px Georgia,serif;margin:0 0 20px}.place{font-size:17px;line-height:1.45;margin-bottom:20px}.place strong{font-size:18px}
+.price{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center;padding:17px 0;border-top:1px solid var(--line);font-size:17px}.price strong:last-child{font-size:19px}
+.btn{display:inline-block;margin-top:16px;background:var(--green);color:#fff;text-decoration:none;border-radius:12px;padding:15px 22px;font-weight:700}
+.photo{min-height:430px;background:url("assets/consultations-presentiel.jpg") center/cover}
+.note{margin-top:16px;background:linear-gradient(90deg,#edf4ef,#f3f7f4);border-radius:16px;padding:24px 30px;display:grid;grid-template-columns:220px 1fr 1fr;gap:30px;align-items:center}
+.note h2{font:700 26px Georgia,serif;margin:0}.note p{margin:0;line-height:1.5}.note p+ p{border-left:1px solid #aebdb5;padding-left:30px}
+footer{margin-top:18px;background:#173d37;color:#fff;padding:27px max(7vw,24px);display:flex;gap:18px 28px;align-items:center;justify-content:center;flex-wrap:wrap;font-size:14px}footer strong{font-family:Georgia,serif;font-size:17px}footer a{color:#fff}
+.menu{display:none}
+@media(max-width:900px){.top{height:auto;padding:18px 22px;align-items:flex-start;gap:14px;flex-direction:column}nav{gap:12px 18px;flex-wrap:wrap}.hero{min-height:220px}.hero-inner,.wrap{width:90%}.grid{grid-template-columns:1fr}.photo{min-height:300px}.note{grid-template-columns:1fr;gap:14px}.note p+ p{border-left:0;border-top:1px solid #aebdb5;padding:14px 0 0}h1{font-size:48px}}
+@media(max-width:560px){nav{font-size:13px}.hero p{font-size:18px}.card{padding:23px 20px}.price{font-size:15px}.note{padding:22px 20px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand">Jean-Pierre Ernst<small>Psychologue clinicien · Thérapeute de famille</small></div>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="qui-suis-je.html">Qui suis-je ?</a>
+    <a href="consultations.html">Consultations</a>
+    <a href="professionnels.html">Pour les professionnels</a>
+    <a href="ecrits.html">Mes écrits</a>
+    <a class="active" href="infos-pratiques.html">Infos pratiques</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="kicker">Tarifs et renseignements</div>
+    <h1>Infos pratiques</h1>
+  </div>
+</section>
+
+<main class="wrap">
+  <div class="grid">
+    <section class="card">
+      <h2>Consultations à Romanèche-Thorins</h2>
+      <div class="place"><strong>Maison pluridisciplinaire de Santé</strong><br>6 rue des Vignes<br>71570 Romanèche-Thorins</div>
+      <div class="price"><span>Consultation individuelle</span><strong>60 €</strong></div>
+      <div class="price"><span>Consultation familiale</span><strong>75 €</strong></div>
+      <div class="price"><span>Séance EMDR</span><strong>75 €</strong></div>
+      <a class="btn" href="https://www.doctolib.fr/psychologue/paris/jean-pierre-ernst">Prendre rendez-vous sur Doctolib →</a>
+    </section>
+    <div class="photo" role="img" aria-label="Espace de consultation chaleureux"></div>
+  </div>
+
+  <section class="note">
+    <h2>Bon à savoir</h2>
+    <p>Les consultations ne sont pas remboursées par la sécurité sociale, mais de nombreuses mutuelles les remboursent.</p>
+    <p>Je ne suis pas affilié au dispositif « mon soutien psy ».</p>
+  </section>
+</main>
+
+<footer>
+  <strong>Jean-Pierre Ernst</strong>
+  <span>Psychologue clinicien · Thérapeute de famille</span>
+  <a href="tel:+33662681956">06 62 68 19 56</a>
+</footer>
+</body>
+</html>
