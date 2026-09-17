@@ -38,3 +38,102 @@ footer{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;padding:30px 
   box-shadow:0 14px 35px rgba(0,0,0,.20);
 }
 .choice span:last-child{margin-top:8px;font-weight:700;color:var(--accent)}
+
+
+/* ===== V4 ACCUEIL : photo plus présente, composition plus chaleureuse ===== */
+.homehero{
+  min-height:calc(100vh - 62px);
+  position:relative;
+  display:flex;
+  align-items:center;
+  background-image:
+    linear-gradient(90deg,
+      rgba(18,38,37,.84) 0%,
+      rgba(18,38,37,.70) 28%,
+      rgba(18,38,37,.36) 53%,
+      rgba(18,38,37,.05) 76%,
+      rgba(18,38,37,0) 100%),
+    url("slide1_image10.png");
+  background-position:center center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+.homehero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:linear-gradient(180deg,rgba(0,0,0,.04),rgba(0,0,0,.10));
+}
+.homehero .hero-inner{
+  position:relative;
+  z-index:1;
+  width:min(1180px,calc(100% - 48px));
+  margin:0 auto;
+  padding:78px 0 86px;
+}
+.homehero .eyebrow{
+  letter-spacing:.16em;
+  font-weight:800;
+  color:#f5eee2;
+  text-shadow:0 2px 12px rgba(0,0,0,.30);
+}
+.homehero h1{
+  max-width:850px;
+  margin:.25em 0 .35em;
+  font-size:clamp(3.7rem,7vw,6.6rem);
+  line-height:.92;
+  color:#fff;
+  text-shadow:0 4px 24px rgba(0,0,0,.26);
+}
+.homehero .motto{
+  max-width:700px;
+  margin-bottom:34px;
+  font-size:clamp(1.55rem,2.5vw,2.25rem);
+  line-height:1.34;
+  color:#fff;
+  text-shadow:0 3px 16px rgba(0,0,0,.34);
+}
+.home-choices{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;
+  max-width:760px;
+}
+.choice{
+  background:rgba(255,250,243,.92);
+  border:1px solid rgba(255,255,255,.82);
+  border-radius:18px;
+  padding:20px 22px;
+  box-shadow:0 16px 40px rgba(0,0,0,.20);
+  backdrop-filter:blur(8px);
+  transition:transform .18s ease,box-shadow .18s ease;
+}
+.choice:hover{
+  transform:translateY(-3px);
+  box-shadow:0 20px 46px rgba(0,0,0,.26);
+}
+.choice .kicker{
+  color:#55756f;
+  letter-spacing:.11em;
+  font-weight:800;
+}
+.choice strong{
+  font-size:1.08rem;
+  line-height:1.35;
+}
+.choice span:last-child{
+  color:#315c55;
+  font-weight:750;
+}
+@media(max-width:760px){
+  .homehero{
+    background-position:62% center;
+  }
+  .homehero .hero-inner{
+    width:min(100% - 30px,680px);
+    padding:55px 0 65px;
+  }
+  .homehero h1{font-size:clamp(3rem,15vw,4.5rem)}
+  .home-choices{grid-template-columns:1fr}
+}
