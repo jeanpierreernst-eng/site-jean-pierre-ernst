@@ -351,7 +351,6 @@ footer{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;padding:30px 
 }
 
 
-
 /* === PAGE PROFESSIONNELS : styles additionnels === */
 :root{
   --ink:#183334;
@@ -400,8 +399,6 @@ nav a.active{font-weight:700;color:#345d53;border-bottom:2px solid #345d53}
   .pro-card img{height:220px}
   .site-footer{flex-direction:column;gap:7px}
 }
-
-
 
 /* ===== PAGE MES ECRITS ===== */
 body.ecrits-page{background:#f7f3eb;color:#1d2f2f}
