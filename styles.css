@@ -137,3 +137,22 @@ footer{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;padding:30px 
   .homehero h1{font-size:clamp(3rem,15vw,4.5rem)}
   .home-choices{grid-template-columns:1fr}
 }
+
+
+/* ===== V5 : hiérarchie typographique validée ===== */
+.homehero h1{
+  font-size:clamp(3rem,5vw,4.8rem);
+  margin:.1em 0 .18em;
+  line-height:1;
+}
+.homehero .eyebrow{
+  display:block;
+  margin:0 0 28px;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(1.65rem,2.6vw,2.35rem);
+  line-height:1.2;
+  letter-spacing:0;
+  text-transform:none;
+  font-weight:600;
+  color:#fff;
+}
